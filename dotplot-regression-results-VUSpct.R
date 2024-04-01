@@ -5,7 +5,6 @@ library(BuenColors)
 library(viridis)
 library(cowplot)
 
-setwd("C:/Parikh/UKBB/_meta-visualization")
 data=read.table("regression-results-compiled.breast.txt",sep="\t",header=TRUE)
 data$nlp = log10(data$classifier_p.value)*-1
 
