@@ -3,7 +3,7 @@ library(ggplot2)
 library(ggpubr)
 library(BuenColors)
 library(viridis)
-setwd("C:/Parikh/UKBB/_meta-visualization")
+
 data=read.table("clinvar-classifications-compiled.txt",sep="\t",header=TRUE)
 data$gene = factor(data$gene,levels=(unique(data$gene)))
 data$ClinVarLabel = factor(data$ClinVarLabel,levels=rev(c("benign","pathogenic","VUS")))
